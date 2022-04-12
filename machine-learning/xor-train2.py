@@ -9,8 +9,8 @@ xor_input = [
 ]
 
 xor_df = pd.DataFrame(xor_input)
-xor_data = xor_df.ix[:,0:1]
-xor_label = xor_df.ix[:,2]
+xor_data = xor_df.loc[:,0:1]
+xor_label = xor_df.loc[:,2]
 
 clf = svm.SVC()
 clf.fit(xor_data, xor_label)
